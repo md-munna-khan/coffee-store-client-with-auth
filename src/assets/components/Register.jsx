@@ -18,7 +18,7 @@ const Register = () => {
             const createdAt = result.user.metadata.creationTime
             const newUser= {name,email,createdAt}
 // save the data info in server
-fetch('http://localhost:5000/users',{
+fetch('https://coffe-shop-server-snowy.vercel.app/users',{
   method:'post',
   headers:{
     'content-type': 'application/json'
